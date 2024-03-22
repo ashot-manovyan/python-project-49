@@ -16,5 +16,8 @@ package-install:
 package-reinstall:
 	python3 -m pip install --user --upgrade-strategy eager dist/*.whl
 
+package-force-reinstall:
+	python3 -m pip install --user --force-reinstall dist/*.whl
+
 lint:
 	poetry run flake8 brain_games
