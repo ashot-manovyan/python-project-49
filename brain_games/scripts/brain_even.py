@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
-import prompt
-import random
-import brain_games.even
+import brain_games.greetings
+import brain_games.engine
+import brain_games.games.even
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('Answer "Yes" if number is even, otherwise answer "No"')
-    question_numbers = random.sample(range(0, 1000), 3)
-    if brain_games.even.quiz(question_numbers) == len(question_numbers):
-        print(f'Congratilations, {name}!')
+    brain_games.greetings
+    print('Answer "yes" if number is even, otherwise answer "no".')
+    brain_games.engine.quiz(brain_games.games.even.task)
 
 
 if __name__ == '__main__':
