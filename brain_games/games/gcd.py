@@ -12,8 +12,7 @@ def gcd(num1, num2):
         num1 = remainder
         remainder = num2 % remainder
         num2 = num1
-    else:
-        return num2
+    return num2
 
 
 def task():
