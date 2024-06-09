@@ -6,7 +6,7 @@ import brain_games.games.calc
 
 def main():
     brain_games.greetings
-    print('What is the result of the expession?')
+    print('What is the result of the expression?')
     brain_games.engine.quiz(brain_games.games.calc.task)
 
 
