@@ -5,8 +5,6 @@ import random
 def is_prime(num):
     if num == 0 or num == 1:
         return "no"
-    elif num == 2:
-        return "yes"
     i = 2
     while i <= num / 2:
         if num % i == 0:
