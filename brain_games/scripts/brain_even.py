@@ -6,7 +6,7 @@ import brain_games.games.even
 
 def main():
     brain_games.greetings
-    print('Answer "yes" if number is even, otherwise answer "no".')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     brain_games.engine.quiz(brain_games.games.even.task)
 
 
